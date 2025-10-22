@@ -11,6 +11,36 @@
 
 ---
 
+## 📑 Índice de Contenidos
+
+1. [📦 Entregables Primera Entrega](#-entregables-primera-entrega)
+2. [📋 Descripción del Proyecto](#-descripción-del-proyecto)
+3. [🎯 Producto de Datos](#-producto-de-datos)
+4. [📊 Dataset](#-dataset)
+5. [🔍 Hallazgos Principales](#-hallazgos-principales)
+6. [📁 Estructura del Proyecto](#-estructura-del-proyecto)
+7. [🚀 Instrucciones de Ejecución](#-instrucciones-de-ejecución)
+8. [📈 Resultados del Análisis](#-resultados-del-análisis)
+9. [🔬 Próximos Pasos](#-próximos-pasos)
+10. [📝 Resumen de Cumplimiento](#-resumen-de-cumplimiento---primera-entrega)
+
+---
+
+## 📦 Entregables Primera Entrega
+
+> **📌 IMPORTANTE:** Los siguientes son los entregables principales de la primera entrega. Haz clic en los enlaces para acceder directamente a cada documento.
+
+### Documentos Principales
+
+| Entregable | Descripción | Ubicación |
+|------------|-------------|-----------|
+| 📄 **Documento PDF** | Documento ejecutivo de 5 páginas | [Ver PDF](documento/PRIMERA%20ENTREGA%20Proyecto%20Final%20_%20Ciencia%20de%20datos%20(1)%20(1).pdf) |
+| 📊 **Notebook** | Análisis exploratorio completo (ejecutable sin errores) | [Ver Notebook](notebooks/entendimiento_datos.ipynb) |
+| 🎥 **Video** | Sustentación de 5 minutos del equipo | [Ver Video](video/videoprimeraentrega.mp4) |
+| 📊 **Presentación** | Diapositivas utilizadas en el video | [Ver Presentación](video/Presentacion%20-%20Primera%20Entrega%20Proyecto%20Ciencia%20de%20datos.pdf) |
+
+---
+
 ## 📋 Descripción del Proyecto
 
 Este proyecto desarrolla una solución de ciencia de datos para una **plataforma de delivery de comida**, enfocándose en la caracterización y segmentación de usuarios nuevos del equipo de Engagement para optimizar estrategias de retención y crecimiento.
@@ -22,6 +52,23 @@ El equipo de Engagement no cuenta con un esquema claro para priorizar recursos y
 ### Objetivo
 
 Caracterizar y segmentar a los nuevos usuarios (aquellos que alcanzaron su cuarta orden) para identificar perfiles de alto potencial, entendiendo su comportamiento en los tres meses posteriores.
+
+### Alcance
+
+**Primera Entrega:**
+- ✅ Entendimiento del negocio y definición de la problemática
+- ✅ Diseño del producto de datos (dashboard + modelo + recomendaciones)
+- ✅ Identificación de aspectos éticos y de privacidad
+- ✅ Definición del enfoque analítico (hipótesis, técnicas, métricas)
+- ✅ Recolección y documentación de fuentes de datos
+- ✅ Análisis exploratorio exhaustivo (univariado, multivariado, gráfico)
+- ✅ Conclusiones iniciales y próximos pasos
+
+**Segunda Entrega:**
+- Preparación y limpieza de datos
+- Modelado predictivo (Random Forest, XGBoost, LightGBM)
+- Construcción del producto de datos funcional
+- Evaluación y retroalimentación con stakeholders
 
 ---
 
@@ -81,7 +128,16 @@ Proyecto_DS/
 │
 ├── 📁 documento/
 │   ├── Proyecto_Final.md                          # Requisitos del proyecto
-│   └── Primera_Entrega_Proyecto_Final.md          # Documento principal de entrega
+│   └── PRIMERA ENTREGA Proyecto Final _
+│       Ciencia de datos (1) (1).pdf               # 📄 DOCUMENTO PDF EJECUTIVO
+│
+├── 📁 notebooks/
+│   └── entendimiento_datos.ipynb                  # 📊 NOTEBOOK DE ANÁLISIS
+│
+├── 📁 video/
+│   ├── videoprimeraentrega.mp4                    # 🎥 VIDEO DE SUSTENTACIÓN
+│   └── Presentacion - Primera Entrega
+│       Proyecto Ciencia de datos.pdf              # 📊 PRESENTACIÓN PDF
 │
 ├── 📁 scripts/                                     # Scripts Python de análisis
 │   ├── README.md                                  # Guía de scripts
@@ -91,28 +147,34 @@ Proyecto_DS/
 │   ├── multivariate_analysis.py                   # Análisis multivariado
 │   └── visualizations.py                          # Generación de gráficas
 │
-├── 📁 notebooks/
-│   └── entendimiento_datos.ipynb                  # Notebook consolidado
-│
 ├── 📁 visualizations/                              # Gráficas generadas (11 PNGs)
 │
-├── 📄 dataset_protegido (1).csv                    # Dataset original
-├── 📄 HALLAZGOS_CLAVE.md                          # Insights ejecutivos
-├── 📄 RESUMEN_TRABAJO_REALIZADO.md                # Guía del proyecto
-└── 📄 ENTREGA_COMPLETA.md                         # Checklist de entrega
+└── 📄 dataset_protegido (1).csv                    # Dataset original
 ```
 
 ---
 
 ## 🚀 Instrucciones de Ejecución
 
-### Requisitos
+### Dependencias
 
 ```bash
-pip install pandas numpy scipy matplotlib seaborn
+pip install pandas numpy scipy matplotlib seaborn jupyter
 ```
 
-### Ejecutar Análisis Completo
+### Opción 1: Ejecutar Notebook Principal (Recomendado)
+
+El análisis completo está consolidado en el notebook ejecutable:
+
+```bash
+jupyter notebook notebooks/entendimiento_datos.ipynb
+```
+
+**Nota:** El notebook se ejecuta secuencialmente sin errores. Contiene todo el análisis exploratorio de datos requerido para la primera entrega.
+
+### Opción 2: Ejecutar Scripts Individuales
+
+Alternativamente, se pueden ejecutar los scripts modulares:
 
 ```bash
 cd scripts
@@ -131,13 +193,6 @@ python multivariate_analysis.py
 
 # 5. Generación de visualizaciones (~30 segundos)
 python visualizations.py
-```
-
-### Ejecutar Notebook
-
-```bash
-cd notebooks
-jupyter notebook entendimiento_datos.ipynb
 ```
 
 ---
@@ -219,6 +274,31 @@ jupyter notebook entendimiento_datos.ipynb
 
 1. Superintendencia de Industria y Comercio. "Guía oficial de protección de datos personales." SIC, 2023.
    [Enlace](https://habeasdata.todoenuno.net.co/wp-content/uploads/2023/10/SuperIndustria-publico-la-Guia-oficial-de-proteccion-de-datos-personales_compressed.pdf)
+
+---
+
+## 📝 Resumen de Cumplimiento - Primera Entrega
+
+### Checklist de Requisitos ✅
+
+| Requisito | Peso | Estado | Evidencia |
+|-----------|------|--------|-----------|
+| Definición de problemática y negocio | 10% | ✅ | [Ver PDF](documento/PRIMERA%20ENTREGA%20Proyecto%20Final%20_%20Ciencia%20de%20datos%20(1)%20(1).pdf) |
+| Ideación del producto de datos | 10% | ✅ | [Ver PDF](documento/PRIMERA%20ENTREGA%20Proyecto%20Final%20_%20Ciencia%20de%20datos%20(1)%20(1).pdf) |
+| Aspectos éticos y responsables | 10% | ✅ | [Ver PDF](documento/PRIMERA%20ENTREGA%20Proyecto%20Final%20_%20Ciencia%20de%20datos%20(1)%20(1).pdf) |
+| Enfoque analítico | 15% | ✅ | [Ver PDF](documento/PRIMERA%20ENTREGA%20Proyecto%20Final%20_%20Ciencia%20de%20datos%20(1)%20(1).pdf) |
+| Recolección de datos | 10% | ✅ | [Ver Notebook](notebooks/entendimiento_datos.ipynb) |
+| Análisis exploratorio de datos | 35% | ✅ | [Ver Notebook](notebooks/entendimiento_datos.ipynb) |
+| Conclusiones iniciales | 10% | ✅ | [Ver PDF](documento/PRIMERA%20ENTREGA%20Proyecto%20Final%20_%20Ciencia%20de%20datos%20(1)%20(1).pdf) |
+
+### Formatos de Entrega ✅
+
+- ✅ **Repositorio GitHub público** con código auto-contenido
+- ✅ **README completo** con integrantes, objetivo, alcance, conclusiones e instrucciones
+- ✅ **Notebook ejecutable** sin errores ([notebooks/entendimiento_datos.ipynb](notebooks/entendimiento_datos.ipynb))
+- ✅ **Documento PDF ejecutivo** de 5 páginas, Arial 12
+- ✅ **Video de sustentación** de 5 minutos con todos los integrantes
+- ✅ **Diapositivas** incluidas en el repositorio
 
 ---
 
