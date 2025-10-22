@@ -1,10 +1,5 @@
 # Hallazgos Clave - Análisis Exploratorio de Datos
 
-**Proyecto:** Primera Entrega - Análisis de Usuarios Engagement
-**Dataset:** 41,667 usuarios que alcanzaron su 4ta orden
-**Fecha de Análisis:** 2025-10-19
-
----
 
 ## 🎯 Executive Summary
 
@@ -356,8 +351,3 @@ El análisis exploratorio ha revelado **patrones claros y accionables** que pued
 
 Estos hallazgos sientan las bases para **personalización a escala** y **optimización del presupuesto promocional**.
 
----
-
-**Documentado por:** Equipo de Data Science
-**Fecha:** 2025-10-19
-**Versión:** 1.0
