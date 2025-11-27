@@ -1,0 +1,52 @@
+feature,importance
+orders_per_day,1829
+days_since_first_order,1778
+brand001_ratio,393
+category_diversity,344
+total_orders_tmenos1,330
+num_shops,292
+efo_to_four,261
+num_brands,151
+first_order_month,111
+num_categories,90
+log_efo_to_four,39
+categoria_recencia_Frío (31–90d),29
+is_weekend_first_order_1,26
+city_token_city006,23
+dominant_category_main_category021,23
+r_segment_r_segment003,19
+dominant_category_main_category008,19
+categoria_recencia_Semi-Activo (8–14d),18
+dominant_category_main_category011,16
+dominant_category_main_category013,16
+dominant_category_main_category004,16
+dominant_category_main_category010,16
+r_segment_r_segment002,15
+city_token_city005,14
+categoria_recencia_Tibio (15–30d),12
+dominant_category_main_category014,11
+dominant_category_main_category007,10
+dominant_category_main_category027,10
+city_token_city004,8
+dominant_category_main_category019,7
+dominant_category_main_category009,7
+dominant_category_main_category005,6
+dominant_category_main_category015,5
+city_token_city003,4
+categoria_recencia_Perdido (>90d),3
+city_token_city002,3
+dominant_category_main_category020,3
+dominant_category_main_category023,2
+dominant_category_main_category017,2
+city_token_city007,0
+dominant_category_main_category006,0
+dominant_category_main_category003,0
+dominant_category_main_category002,0
+dominant_category_main_category012,0
+dominant_category_main_category016,0
+dominant_category_main_category018,0
+dominant_category_main_category022,0
+dominant_category_main_category025,0
+dominant_category_main_category024,0
+dominant_category_main_category026,0
+dominant_category_main_category028,0

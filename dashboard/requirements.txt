@@ -1,0 +1,18 @@
+# Dashboard Dependencies
+# Growth Predictor - Engagement Analytics Platform
+
+# Core
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Visualization
+plotly>=5.17.0
+
+# Utils
+pillow>=10.0.0
