@@ -1,21 +1,4 @@
-# Growth Predictor Dashboard
 
-Un dashboard moderno y visualmente impresionante para el equipo de Engagement, desarrollado con Streamlit.
-
-## Características
-
-- **Dashboard Ejecutivo**: KPIs principales, distribución de crecimiento, comparación de modelos
-- **Explorador de Segmentos**: Filtros interactivos por recencia, segmento y tipo de crecimiento
-- **Predicciones en Tiempo Real**: Predicción de probabilidad de high-growth para usuarios individuales
-- **Análisis de Afinidades**: Preferencias de categorías, marcas y tiendas
-
-## Diseño
-
-- Interfaz moderna con glassmorphism y gradientes animados
-- Colores: Indigo (#6366f1), Rosa (#ec4899), Cyan (#06b6d4)
-- Tipografía: Inter (Google Fonts)
-- Gráficos interactivos con Plotly
-- Responsive design
 
 ## Instalación
 
@@ -39,14 +22,7 @@ streamlit run dashboard/app.py
 
 El dashboard se abrirá en `http://localhost:8501`
 
-## Estructura de Archivos
 
-```
-dashboard/
-├── app.py              # Aplicación principal de Streamlit
-├── requirements.txt    # Dependencias de Python
-└── README.md          # Este archivo
-```
 
 ## Dependencias de Datos
 
