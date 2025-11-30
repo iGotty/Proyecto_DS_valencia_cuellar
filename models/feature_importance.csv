@@ -1,52 +1,50 @@
 feature,importance
-num_shops,0.43460032
-categoria_recencia_Perdido (>90d),0.12405862
-first_order_month,0.10505961
-orders_per_day,0.096157104
-days_since_first_order,0.074262224
-categoria_recencia_Frío (31–90d),0.024047166
-num_categories,0.019984042
-num_brands,0.019714285
-categoria_recencia_Tibio (15–30d),0.013113833
-total_orders_tmenos1,0.008415996
-log_efo_to_four,0.0069528376
-dominant_category_main_category014,0.006190035
-category_diversity,0.0054981373
-city_token_city003,0.004372393
-categoria_recencia_Semi-Activo (8–14d),0.004021586
-dominant_category_main_category019,0.0038308343
-dominant_category_main_category011,0.003589374
-efo_to_four,0.0031566638
-dominant_category_main_category009,0.0028480382
-dominant_category_main_category027,0.0025817563
-brand001_ratio,0.0025120454
-is_weekend_first_order_1,0.0025101085
-dominant_category_main_category005,0.0024245218
-dominant_category_main_category008,0.002290314
-city_token_city002,0.002152834
-city_token_city005,0.002073393
-dominant_category_main_category004,0.0020377517
-dominant_category_main_category010,0.0019688345
-dominant_category_main_category015,0.0019551287
-dominant_category_main_category021,0.0018981199
-dominant_category_main_category003,0.0017738077
-dominant_category_main_category013,0.001730466
-city_token_city004,0.0016731308
-dominant_category_main_category020,0.0016675451
-dominant_category_main_category023,0.001664307
-dominant_category_main_category007,0.0015820225
-r_segment_r_segment002,0.0015155966
-r_segment_r_segment003,0.0014735139
-city_token_city006,0.0013884006
-dominant_category_main_category016,0.0012532088
-dominant_category_main_category006,0.0
-city_token_city007,0.0
+is_multi_shop,0.47603613
+is_multi_category,0.15794593
+shop_diversity,0.124896295
+shops_per_order,0.062009703
+categories_per_order,0.05488713
+category_diversity,0.031377
+dominant_category_ratio,0.012337808
+days_since_first_order,0.009399659
+categoria_recencia_Frío (31–90d),0.008884391
+city_token_city002,0.0057330597
+dominant_category_main_category014,0.0051932256
+dominant_category_main_category015,0.0042761103
+dominant_category_main_category020,0.0039980863
+dominant_category_main_category023,0.003823937
+city_token_city003,0.003352943
+dominant_category_main_category016,0.0029342587
+dominant_category_main_category005,0.0025356086
+efo_to_four,0.0023255986
+categoria_recencia_Tibio (15–30d),0.0022785442
+brand001_ratio,0.00222985
+categoria_recencia_Semi-Activo (8–14d),0.0020771024
+r_segment_r_segment002,0.0020177537
+dominant_category_main_category004,0.0019803136
+dominant_category_main_category013,0.0019435603
+r_segment_r_segment003,0.0018937202
+dominant_category_main_category008,0.0018051447
+city_token_city005,0.0017152688
+city_token_city006,0.0016837819
+city_token_city004,0.0015964118
+dominant_category_main_category027,0.0015843376
+dominant_category_main_category021,0.0014724187
+dominant_category_main_category007,0.0014675248
+dominant_category_main_category010,0.0013038804
+dominant_category_main_category003,0.0009376001
+dominant_category_main_category017,6.586594e-05
+categoria_recencia_Perdido (>90d),0.0
+dominant_category_main_category011,0.0
 dominant_category_main_category002,0.0
+city_token_city007,0.0
+dominant_category_main_category009,0.0
+dominant_category_main_category006,0.0
 dominant_category_main_category012,0.0
-dominant_category_main_category017,0.0
 dominant_category_main_category018,0.0
+dominant_category_main_category019,0.0
 dominant_category_main_category022,0.0
-dominant_category_main_category025,0.0
 dominant_category_main_category024,0.0
+dominant_category_main_category025,0.0
 dominant_category_main_category026,0.0
 dominant_category_main_category028,0.0
