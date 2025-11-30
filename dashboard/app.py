@@ -411,27 +411,36 @@ def load_feature_importance():
 # ============================================================================
 
 def create_gauge_chart(value, title, max_val=1):
-    """Crea un gauge chart moderno"""
+    """Crea un gauge chart moderno
+
+    Args:
+        value: Probabilidad entre 0 y 1
+        title: Título del gauge
+        max_val: Valor máximo (default 1)
+    """
+    # Convertir probabilidad (0-1) a porcentaje (0-100)
+    value_pct = value * 100
+
     fig = go.Figure(go.Indicator(
-        mode="gauge+number+delta",
-        value=value,
+        mode="gauge+number",
+        value=value_pct,
         domain={'x': [0, 1], 'y': [0, 1]},
-        number={'suffix': '%', 'font': {'size': 40, 'color': 'white'}},
+        number={'suffix': '%', 'font': {'size': 40, 'color': 'white'}, 'valueformat': '.1f'},
         title={'text': title, 'font': {'size': 16, 'color': 'rgba(255,255,255,0.8)'}},
         gauge={
-            'axis': {'range': [0, max_val * 100], 'tickcolor': 'rgba(255,255,255,0.5)'},
+            'axis': {'range': [0, 100], 'tickcolor': 'rgba(255,255,255,0.5)'},
             'bar': {'color': '#6366f1'},
             'bgcolor': 'rgba(255,255,255,0.1)',
             'borderwidth': 0,
             'steps': [
-                {'range': [0, 50], 'color': 'rgba(239, 68, 68, 0.3)'},
-                {'range': [50, 75], 'color': 'rgba(245, 158, 11, 0.3)'},
-                {'range': [75, 100], 'color': 'rgba(16, 185, 129, 0.3)'}
+                {'range': [0, 40], 'color': 'rgba(239, 68, 68, 0.3)'},
+                {'range': [40, 70], 'color': 'rgba(245, 158, 11, 0.3)'},
+                {'range': [70, 100], 'color': 'rgba(16, 185, 129, 0.3)'}
             ],
             'threshold': {
                 'line': {'color': '#ec4899', 'width': 4},
                 'thickness': 0.75,
-                'value': value * 100
+                'value': value_pct
             }
         }
     ))
@@ -569,9 +578,9 @@ with st.sidebar:
     st.markdown("""
     <div style="background: rgba(99, 102, 241, 0.1); border-radius: 12px; padding: 15px; margin-top: 20px;">
         <h4 style="color: #a78bfa; margin: 0 0 10px 0; font-size: 0.9rem;">📊 Modelo Activo</h4>
-        <p style="color: white; font-size: 0.85rem; margin: 5px 0;"><strong>LightGBM</strong></p>
-        <p style="color: rgba(255,255,255,0.6); font-size: 0.75rem; margin: 5px 0;">AUC-ROC: 0.9999</p>
-        <p style="color: rgba(255,255,255,0.6); font-size: 0.75rem; margin: 5px 0;">F1-Score: 0.9988</p>
+        <p style="color: white; font-size: 0.85rem; margin: 5px 0;"><strong>XGBoost</strong></p>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.75rem; margin: 5px 0;">AUC-ROC: ~0.80</p>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.75rem; margin: 5px 0;">Precision@20%: ~0.74</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -716,11 +725,11 @@ if page == "🏠 Dashboard Principal" and data_loaded:
     with col2:
         st.markdown('<div class="glass-card">', unsafe_allow_html=True)
 
-        # Performance por conjunto
+        # Performance por conjunto (métricas realistas con features normalizados)
         model_comparison = pd.DataFrame({
-            'Modelo': ['RandomForest', 'XGBoost', 'LightGBM'],
-            'AUC-ROC': [0.995, 0.9999, 0.9999],
-            'F1-Score': [0.916, 0.998, 0.999]
+            'Modelo': ['Random Forest', 'XGBoost'],
+            'AUC-ROC': [0.78, 0.80],
+            'Precision@20%': [0.72, 0.74]
         })
 
         fig = go.Figure()
@@ -731,9 +740,9 @@ if page == "🏠 Dashboard Principal" and data_loaded:
             marker_color='#6366f1'
         ))
         fig.add_trace(go.Bar(
-            name='F1-Score',
+            name='Precision@20%',
             x=model_comparison['Modelo'],
-            y=model_comparison['F1-Score'],
+            y=model_comparison['Precision@20%'],
             marker_color='#ec4899'
         ))
 
@@ -743,7 +752,7 @@ if page == "🏠 Dashboard Principal" and data_loaded:
             plot_bgcolor='rgba(0,0,0,0)',
             font=dict(color='rgba(255,255,255,0.8)'),
             xaxis=dict(gridcolor='rgba(255,255,255,0.1)'),
-            yaxis=dict(gridcolor='rgba(255,255,255,0.1)', range=[0.9, 1.01]),
+            yaxis=dict(gridcolor='rgba(255,255,255,0.1)', range=[0.0, 1.0]),
             barmode='group',
             legend=dict(font=dict(color='white'))
         )

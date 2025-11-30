@@ -549,10 +549,16 @@ print("\n" + "="*80)
 print("8. GUARDANDO MODELO Y RESULTADOS")
 print("="*80)
 
-# Guardar mejor modelo
+# Guardar mejor modelo como diccionario con feature_cols (requerido por dashboard)
+model_data = {
+    'model': best_model,
+    'feature_cols': feature_cols,
+    'model_name': best_model_name,
+    'threshold': HIGH_GROWTH_THRESHOLD
+}
 model_path = 'models/best_classifier.pkl'
 with open(model_path, 'wb') as f:
-    pickle.dump(best_model, f)
+    pickle.dump(model_data, f)
 print(f"✅ Modelo guardado: {model_path}")
 
 # Guardar reporte JSON
