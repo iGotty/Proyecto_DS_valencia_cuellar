@@ -9,30 +9,14 @@ Semestre 2025-20
 - Juan David Valencia – 201728857
 - Juan Esteban Cuellar – 202014258
 
+---
 
-## Cómo ejecutar el análisis
+## Entregables
 
-### Requisitos
+Todos los documentos de la primera entrega están en este repositorio:
 
-```bash
-pip install pandas numpy scipy matplotlib seaborn jupyter
-```
+- **Documento PDF**: [documento/Documento Entrega Final Proyecto Final  Ciencia de datos.pdf](documento\Documento Entrega Final Proyecto Final  Ciencia de datos.pdf)
+- **Notebooks**: [notebooks/](notebooks/)
+- **Video**: [video/Video Entrega Final.mp4](video\Video Entrega Final.mp4)
+- **Presentación**: [video/Presentacion - Primera Entrega Proyecto Ciencia de datos.pdf](documento\Presentacion Entrega Final Proyecto Ciencia de datos.pdf)
 
-### Opción 1: Notebook (recomendado)
-
-```bash
-jupyter notebook notebooks/entendimiento_datos.ipynb
-```
-
-El notebook se ejecuta sin errores y contiene todo el análisis.
-
-### Opción 2: Scripts individuales
-
-```bash
-cd scripts
-python data_quality.py
-python affinity_analysis.py
-python univariate_analysis.py
-python multivariate_analysis.py
-python visualizations.py
-```
